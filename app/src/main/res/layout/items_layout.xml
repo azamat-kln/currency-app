@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/myToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="Converter" />
+
+        <View
+            android:id="@+id/view_1dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/blue_white"
+            app:layout_constraintTop_toBottomOf="@id/myToolBar" />
+
+        <RelativeLayout
+            android:id="@+id/relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_1dp">
+
+            <View
+                android:id="@+id/parent_rectangle"
+                android:layout_width="371dp"
+                android:layout_height="97dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="13dp"
+                android:background="#00000000" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_field"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="307dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="26dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:hint="@string/tenge_kz">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/text_input_ET"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/amount_tenge"
+                android:layout_width="104dp"
+                android:layout_height="26dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="40dp"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="-1sp"
+                android:textAppearance="@style/text_style" />
+
+            <View
+                android:id="@+id/rectangle_kz_flag"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="341dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/rectangle_kz_flag" />
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="28.55dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="341dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/kz_flag" />
+
+            <TextView
+                android:id="@+id/tenge_kz_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="207dp"
+                android:layout_marginTop="88dp"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="-1sp"
+                android:text="@string/tenge_kz"
+                android:textAppearance="@style/text_style" />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scrollbars="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/relative_layout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

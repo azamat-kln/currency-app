@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/delete_item"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:title="Удалить"
+        android:visible="false"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/sort_by"
+        android:title="Сортировать по ">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/sort_by_alphabet"
+                    android:title="Алфавиту" />
+                <item
+                    android:id="@+id/sort_by_cost"
+                    android:title="Стоимости" />
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/reset_sorting"
+        android:title="Сбросить сортировку">
+
+    </item>
+
+</menu>
