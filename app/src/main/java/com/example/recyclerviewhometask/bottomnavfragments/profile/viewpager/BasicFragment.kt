@@ -1,4 +1,4 @@
-package com.example.recyclerviewhometask.bottomnavfragments.viewpager
+package com.example.recyclerviewhometask.bottomnavfragments.profile.viewpager
 
 import android.content.ActivityNotFoundException
 import android.content.Intent

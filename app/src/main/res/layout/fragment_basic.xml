@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        tools:context=".bottomnavfragments.viewpager.BasicFragment">
+        tools:context=".bottomnavfragments.profile.viewpager.BasicFragment">
 
         <Button
             android:id="@+id/btn_share"

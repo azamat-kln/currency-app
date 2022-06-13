@@ -1,4 +1,4 @@
-package com.example.recyclerviewhometask.bottomnavfragments.viewpager
+package com.example.recyclerviewhometask.bottomnavfragments.profile.viewpager
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

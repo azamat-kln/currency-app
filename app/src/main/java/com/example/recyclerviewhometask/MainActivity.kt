@@ -2,9 +2,9 @@ package com.example.recyclerviewhometask
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.coordinatorlayout.widget.CoordinatorLayout
-import androidx.fragment.app.Fragment
 import com.example.recyclerviewhometask.bottomnavfragments.*
+import com.example.recyclerviewhometask.bottomnavfragments.news.NewsFragment
+import com.example.recyclerviewhometask.bottomnavfragments.profile.ProfileFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
                     true
                 }
                 R.id.item_2 -> {
-                    transaction.replace(R.id.container_for_fragment, FavouriteFragment()).commit()
+                    transaction.replace(R.id.container_for_fragment, NewsFragment()).commit()
                     true
                 }
                 R.id.item_3 -> {

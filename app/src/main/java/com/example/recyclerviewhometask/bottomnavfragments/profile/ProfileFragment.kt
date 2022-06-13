@@ -1,4 +1,4 @@
-package com.example.recyclerviewhometask.bottomnavfragments
+package com.example.recyclerviewhometask.bottomnavfragments.profile
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.viewpager2.widget.ViewPager2
 import com.example.recyclerviewhometask.R
-import com.example.recyclerviewhometask.bottomnavfragments.viewpager.ProfileAdapter
+import com.example.recyclerviewhometask.bottomnavfragments.profile.viewpager.ProfileAdapter
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 
